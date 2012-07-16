@@ -1,0 +1,59 @@
+#
+# Load values 0..15 into the registers
+#
+85000000
+85100001
+85200002
+85300003
+85400004
+85500005
+85600006
+85700007
+85800008
+85900009
+85A0000A
+85B0000B
+85C0000C
+85D0000D
+85E0000E
+85F00100
+#
+# NOP as separator
+#
+FF00
+#
+# Test CIM
+#
+4AEA0010
+4AEA000E
+4AEA000C
+#
+# NOP as separator
+#
+FF00
+#
+# Test PSHM with RB > RA
+#
+9F36
+#
+# NOP as separator
+#
+FF00
+#
+# Test PSHM with RA > RB
+#
+9FE2
+#
+# NOP as separator
+#
+FF00
+#
+# Store contents of register 15 at address 7FA0
+#
+90F07FA0
+#
+# Store contents of register 15 at address 7FA0 plus content of register one
+#
+90F17FA0
+FF00
+FF00
